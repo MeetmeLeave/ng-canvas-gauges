@@ -43,8 +43,6 @@ export class LinearGaugeComponent implements OnInit {
 
     ngAfterViewChecked(){
         let props = this.getProps();
-        console.log(props.value);
-
         if (typeof props.value !== 'undefined') { 
             this.zone.runOutsideAngular(() => {
                 this.gauge.value = props.value;
