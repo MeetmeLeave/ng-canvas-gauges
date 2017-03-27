@@ -1,2 +1,2 @@
-exports.RadialGauge = require('./lib/radial-gauge/angular2-radial-gauge').RadialGauge;
-exports.LinearGauge = require('./lib/linear-gauge/angular2-linear-gauge').LinearGauge;
+exports.RadialGaugeComponent = require('./lib/radial-gauge/radial-gauge').RadialGaugeComponent;
+exports.LinearGaugeComponent = require('./lib/linear-gauge/linear-gauge').LinearGaugeComponent;

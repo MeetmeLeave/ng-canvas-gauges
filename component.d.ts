@@ -1,2 +1,2 @@
-export * from './lib/radial-gauge/angular2-radial-gauge';
-export * from './lib/linear-gauge/angular2-linear-gauge';
+export * from './lib/radial-gauge/radial-gauge';
+export * from './lib/linear-gauge/linear-gauge';
