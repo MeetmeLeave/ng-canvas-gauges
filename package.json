@@ -5,7 +5,7 @@
   "main": "ng-canvas-gauges.js",
   "scripts": {
     "watch": "tsc -p src -w",
-    "build": "rm -rf lib && tsc -p src && cp ./src/gauge.html lib/"
+    "build": "rm -rf lib && tsc -p src"
   },
   "repository": {
     "type": "git",
