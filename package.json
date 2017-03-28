@@ -1,15 +1,15 @@
 {
   "name": "ng-canvas-gauges",
   "version": "1.0.0",
-  "description": "Angular 2 component wrapper for canvas-gauges by @Mikhus",
+  "description": "Angular 2 component wrapper for the canvas-gauges lib written by @Mikhus",
   "main": "ng-canvas-gauges.js",
   "scripts": {
     "watch": "tsc -p src -w",
-    "build": "rm -rf lib && tsc -p src"
+    "build": "rm -rf lib && tsc -p src && cp ./src/gauge.html lib/"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
   },
   "keywords": [
     "Angular 2",
@@ -19,9 +19,9 @@
   "author": "vladimir.martynenko.work@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
   "devDependencies": {
     "typescript": "^1.7.5"
   },

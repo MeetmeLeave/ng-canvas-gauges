@@ -1,1 +1,1 @@
-canvas-gauges ported to be as an component of Angular2.
+Angular2 component wrapper for the canvas-gauges library written by @Mikhus(https://github.com/Mikhus/canvas-gauges).

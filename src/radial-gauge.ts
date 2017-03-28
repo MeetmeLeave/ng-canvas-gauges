@@ -1,6 +1,9 @@
 import {Component, NgZone, ElementRef} from '@angular/core';
 import {BaseGauge} from './base-gauge';
 
+/**
+ * Implements Radial Gauge from the original library
+ */
 @Component({
     selector: 'radial-gauge',
     templateUrl: './gauge.html'
