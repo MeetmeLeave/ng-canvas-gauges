@@ -1,5 +1,3 @@
-/// <reference path="../node_modules/@types/canvas-gauges/index.d.ts" />
-
 import {Component, ViewChild, Input, NgZone, ElementRef, OnInit} from '@angular/core';
 import * as CanvasGauges from 'canvas-gauges';
 
