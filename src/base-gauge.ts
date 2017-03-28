@@ -54,7 +54,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
                             part
                     )
                     .join('')
-            ] = attr.value;
+            ] = CanvasGauges.DomObserver.parse(attr.value);
         }
 
         return this.options;
