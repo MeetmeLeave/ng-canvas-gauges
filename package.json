@@ -1,8 +1,8 @@
 {
-  "name": "angular2-canvas-gauges",
+  "name": "ng-canvas-gauges",
   "version": "1.0.0",
   "description": "Angular 2 component wrapper for canvas-gauges by @Mikhus",
-  "main": "angular2-canvas-gauges.js",
+  "main": "ng-canvas-gauges.js",
   "scripts": {
     "watch": "tsc -p src -w",
     "build": "rm -rf lib && tsc -p src"
