@@ -42,9 +42,9 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
             renderTo: this.canvas.nativeElement
         });
 
-        for(let attr of this.el.nativeElement.attributes){
+        for (var i = 0; i < this.el.nativeElement.attributes.length; i++) {
             this.options[
-                attr.name
+                this.el.nativeElement.attributes[i].name
                     .split(/-/)
                     .map((part: string, i: number) => 
                         i > 0 ? 
@@ -52,7 +52,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
                             part
                     )
                     .join('')
-            ] = CanvasGauges.DomObserver.parse(attr.value);
+            ] = CanvasGauges.DomObserver.parse(this.el.nativeElement.attributes[i].value);
         }
 
         return this.options;
