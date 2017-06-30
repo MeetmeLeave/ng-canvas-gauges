@@ -1,46 +1,48 @@
 {
-  "name": "ng-canvas-gauges",
-  "version": "1.0.4",
-  "description": "Angular 2 component wrapper for the canvas-gauges lib written by @Mikhus",
-  "main": "ng-canvas-gauges.js",
-  "scripts": {
-    "watch": "tsc -p src -w",
-    "build": "rm -rf lib && tsc -p src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
-  },
-  "keywords": [
-    "Angular 2",
-    "Canvas",
-    "Gauges"
-  ],
-  "author": "vladimir.martynenko.work@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
-  },
-  "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
-  "devDependencies": {
-    "typescript": "^1.7.5"
-  },
-  "dependencies": {
-    "@angular/animations": "^4.0.0",
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/platform-server": "^4.0.0",
-    "@angular/router": "^4.0.0",
-    "@types/canvas-gauges": "^2.0.5",
-    "canvas-gauges": "^2.1.4",
-    "rxjs": "5.2.0",
-    "typescript": "^2.2.3",
-    "zone.js": "^0.8.10"
-  }
+    "name": "ng-canvas-gauges",
+    "version": "1.0.5",
+    "description": "Angular 2 component wrapper for the canvas-gauges lib written by @Mikhus",
+    "main": "ng-canvas-gauges.js",
+    "scripts": {
+        "watch": "tsc -p src -w",
+        "build": "rm -rf lib && tsc -p src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
+    },
+    "keywords": [
+        "Angular 2",
+        "Canvas",
+        "Gauges"
+    ],
+    "author": "vladimir.martynenko.work@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
+    },
+    "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
+    "devDependencies": {
+        "@types/core-js": "0.9.36",
+        "typescript": "^2.4.0",
+        "typings": "^2.1.0"
+    },
+    "dependencies": {
+        "@angular/animations": "^4.2.5",
+        "@angular/common": "^4.2.5",
+        "@angular/compiler": "^4.2.5",
+        "@angular/compiler-cli": "^4.2.5",
+        "@angular/core": "^4.2.5",
+        "@angular/forms": "^4.2.5",
+        "@angular/http": "^4.2.5",
+        "@angular/platform-browser": "^4.2.5",
+        "@angular/platform-browser-dynamic": "^4.2.5",
+        "@angular/platform-server": "^4.2.5",
+        "@angular/router": "^4.2.5",
+        "@types/canvas-gauges": "^2.1.0",
+        "canvas-gauges": "^2.1.4",
+        "core-js": "^2.4.1",
+        "rxjs": "^5.2.0",
+        "zone.js": "^0.8.12"
+    }
 }

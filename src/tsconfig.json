@@ -1,13 +1,17 @@
 {
-  "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "removeComments": true,
-    "sourceMap": true,
-    "outDir": "../lib",
-    "declaration": true
-  }
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "sourceMap": true,
+        "outDir": "../lib",
+        "declaration": true
+    },
+    "types": [
+        "core-js"
+    ]
 }
