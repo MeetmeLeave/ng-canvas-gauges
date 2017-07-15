@@ -1,2 +1,1 @@
-export * from './lib/radial-gauge';
-export * from './lib/linear-gauge';
+export * from './lib/gauges-module';
