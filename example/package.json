@@ -23,12 +23,12 @@
     "@angular/router": "^4.2.5",
     "@types/node": "^6.0.79",
     "core-js": "^2.4.1",
-    "ng-canvas-gauges": "^1.0.5",
+    "ng-canvas-gauges": "^2.0.0",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.2",
+    "@angular/cli": "1.2.1",
     "@angular/compiler-cli": "^4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
