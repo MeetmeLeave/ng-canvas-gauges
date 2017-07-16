@@ -5,32 +5,33 @@
 ~~~
 npm install --save ng-canvas-gauges
 ~~~
-2. Add the component to your module file and register it inside the declarations:
+2. Add the GaugesModule to your AppModule file and register it inside the imports:
 
 ~~~javascript 
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
-import { AppComponent } from './app.component';
-import {LinearGaugeComponent, RadialGaugeComponent} from '../../node_modules/ng-canvas-gauges/component';
+import {AppComponent} from './app.component';
+import {GaugesModule} from 'ng-canvas-gauges/src';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LinearGaugeComponent,
-    RadialGaugeComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        GaugesModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
+
 ~~~
 3. Add the markup to your template as simple as that:
 ~~~javascript
