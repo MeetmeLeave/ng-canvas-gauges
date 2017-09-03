@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
-import {GaugesModule} from 'ng-canvas-gauges/lib';
+import {GaugesModule} from 'ng-canvas-gauges';
 
 @NgModule({
     declarations: [
