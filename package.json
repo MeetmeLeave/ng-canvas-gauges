@@ -2,7 +2,7 @@
     "name": "ng-canvas-gauges",
     "version": "2.0.0",
     "description": "Angular 2 component wrapper for the canvas-gauges lib written by @Mikhus",
-    "main": "ng-canvas-gauges.js",
+    "main": "lib/index.js",
     "scripts": {
         "watch": "tsc -p src -w",
         "build": "rm -rf lib && tsc -p src"
