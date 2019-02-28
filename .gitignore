@@ -5,3 +5,12 @@ jspm_packages
 lib
 build
 *.log
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# System Files
+.DS_Store
+Thumbs.db

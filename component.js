@@ -1,1 +1,0 @@
-exports.GaugesModule = require('./lib/gauges-module').GaugesModule;

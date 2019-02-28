@@ -1,20 +1,18 @@
-### Angular2 component wrapper for the canvas-gauges library written by @Mikhus(https://github.com/Mikhus/canvas-gauges).
+### Angular 6+ component wrapper for the canvas-gauges library by @Mikhus(https://github.com/Mikhus/canvas-gauges).
 
-### The setup path:
-1. Install the package in your angular2 app
+### Getting Started
+1. Install the package in your angular 7 or greater app
 ~~~
-npm install --save ng-canvas-gauges
+npm install ng-canvas-gauges
 ~~~
-2. Add the GaugesModule to your AppModule file and register it inside the imports:
+2. Import the GaugesModule to your AppModule file and register it in the imports:
 
 ~~~javascript 
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-
 import {AppComponent} from './app.component';
-import {GaugesModule} from 'ng-canvas-gauges/lib';
+
+import {GaugesModule} from 'ng-canvas-gauges';
 
 @NgModule({
     declarations: [
@@ -22,8 +20,6 @@ import {GaugesModule} from 'ng-canvas-gauges/lib';
     ],
     imports: [
         BrowserModule,
-        FormsModule,
-        HttpModule,
         GaugesModule
     ],
     providers: [],
@@ -31,11 +27,11 @@ import {GaugesModule} from 'ng-canvas-gauges/lib';
 })
 export class AppModule {
 }
-
 ~~~
-3. Add the markup to your template as simple as that:
+3. Add the linear-gauge or radial-gauge element to your template:
 ~~~javascript
-<linear-gauge width="150" height="600"></linear-gauge>
+<linear-gauge width="150" height="400"></linear-gauge>
+<radial-gauge width="400" height="400"></radial-gauge>
 ~~~
 ------------------------------------------------------
 
@@ -80,8 +76,26 @@ export class AppModule {
     [attr.value]="value"
   ></linear-gauge>
 ~~~
-All possible attributes from the original library are supported and can be found right here:
+All canvas-gauge attributes are supported. Learn more:
 [https://canvas-gauges.com/documentation/user-guide/configuration](https://canvas-gauges.com/documentation/user-guide/configuration)
+
+------------------------------------------------------
+## Build
+This repo layout is based on an Angular 6 or greater workspace containing the ng-canvas-gauge library project
+and a demo angular app project. 
+
+1. Install dependencies
+~~~
+npm install
+~~~
+
+2. Create an installable library (.tgz) for upload to the npm public repository or for local installation. 
+    Output is to ./dist/ng-canvas-gauges/ folder.
+~~~
+npm run build:package
+~~~
+
+------------------------------------------------------
 
 ## Special Thanks
 
