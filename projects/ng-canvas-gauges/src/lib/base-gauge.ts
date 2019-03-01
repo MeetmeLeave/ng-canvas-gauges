@@ -46,33 +46,31 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
      */
     protected gauge: T;
 
-<<<<<<< HEAD
 
     /**
      * Flag indicating that OnViewInit life-cycle has completed
      */
     private isInited = false;
 
-=======
->>>>>>> refs/remotes/origin/ng6-upgrade
     /**
      * value property of gauge prior to component view initialization
      */
     private preInitValue: number;
 
     /**
-<<<<<<< HEAD
      * options property of gauge prior to component view initialization
      */
     private preInitOptions: T2;
 
 
+    /**
+     * Listen for attribute changes, i.e., options properties that are stored
+     * as attributes on this ElementRef
+     */
     private domListener: MutationObserver;
 
 
     /**
-=======
->>>>>>> refs/remotes/origin/ng6-upgrade
      *
      * @param el - reference to the element of the whole component, used to scrape options declared on the component itself
      * @param zone - required to redraw gauge outside of Angular, due to animation lags caused by the ovewritten function of the ngZone
@@ -80,7 +78,6 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
     constructor(private el: ElementRef, public zone: NgZone) {
     }
 
-<<<<<<< HEAD
 
     /**
      * Subclasses should instantiate the CanvasGauge object in the child component
@@ -101,36 +98,10 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
 
         // Map attribute-based options onto options.
         // Requries converting kebab style attribute names to camelCase property names
-=======
-    /**
-     * Subclasses should instantiate of the Gauge object in the child component
-     */
-    abstract ngOnInit(): void;
-
-    public set value(newValue: number) {
-        if (!this.gauge) {
-            this.preInitValue = newValue;
-            return;
-        }
-
-        this.zone.runOutsideAngular(() => {
-            this.gauge.value = newValue;
-        });
-    }
-
-    /**
-     * Returns gauges properties as an options object.
-     */
-    public get options(): T2 {
-        const options = {} as T2;
-        options.renderTo = this.canvas.nativeElement;
-
->>>>>>> refs/remotes/origin/ng6-upgrade
         for (const attr of this.el.nativeElement.attributes) {
             const prop = attributeName2PropertyName(attr.name);
             options[prop] = CanvasGauges.DomObserver.parse(attr.value);
         }
-<<<<<<< HEAD
 
         // merge preOptons with attribute-based properties
         // tslint:disable-next-line:forin
@@ -147,6 +118,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
         return options;
     }
 
+    
     /**
      * Assign gauge options at anytime in the lifecycle.
      * @param newOptions - assign the style and size properties
@@ -194,11 +166,6 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
      *
      * @param newOptions  - the options to update the gauge
      */
-=======
-        return options;
-    }
-
->>>>>>> refs/remotes/origin/ng6-upgrade
     public update(newOptions: T2 | {}) {
 
         // map all options onto this element's attributes
@@ -210,11 +177,8 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
             const val = newOptions[prop].toString();
 
             if (prop === 'value') {
-<<<<<<< HEAD
                 // short circuit the value property update by calling
                 // the gauge.value api directly for efficient animated update
-=======
->>>>>>> refs/remotes/origin/ng6-upgrade
                 this.value = CanvasGauges.DomObserver.parse(val);
             } else {
                 const attrName = toKebabCase(prop);
@@ -223,25 +187,22 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
         }
     }
 
-<<<<<<< HEAD
 
     /**
      * Perform gauge initialization.
      * Subclasses that override this method must this super version
      * for proper operation.
      */
-=======
->>>>>>> refs/remotes/origin/ng6-upgrade
     public ngAfterViewInit() {
 
         // initial update of gauge properties
         this.initGauge();
 
-<<<<<<< HEAD
         this.listenForDOMEvents();
 
         this.isInited = true;
     }
+
 
     /**
      * Listen for attribute-change events that are created when updating
@@ -267,6 +228,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
                 });
     }
 
+
     /**
      * Discontinue listening for attribute change events.
      */
@@ -277,49 +239,26 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
         }
     }
 
+
     /**
      * Initalize the gauge with all options defined by attributes and
      * parent component options.
      */
-=======
-        // Listen to gauge element for attribute changes
-        // Convert all changed attribtues into a GenericOptions or subclass
-        // Update the gauge with the new options.
-        Rx.DOM.fromMutationObserver(this.el.nativeElement, { attributes: true }).
-            subscribe(changes => {
-                const newOptions = {} as T2;
-                changes.forEach(change => {
-                    if ('attributes' === change.type) {
-                        // console.log('DOM, change', change.attributeName);
-                        newOptions[attributeName2PropertyName(change.attributeName)] =
-                            this.el.nativeElement.getAttribute(change.attributeName);
-                    }
-                });
-
-                this.basicUpdate(newOptions);
-            });
-    }
-
->>>>>>> refs/remotes/origin/ng6-upgrade
     protected initGauge() {
         const options = this.options;
         if (this.preInitValue) {
             options.value = this.preInitValue;
         }
-<<<<<<< HEAD
 
         // init options.renderTo if needed
         if (!options.hasOwnProperty('renderTo') || !options.renderTo) {
             options.renderTo = this.canvas.nativeElement;
         }
 
-=======
->>>>>>> refs/remotes/origin/ng6-upgrade
         this.basicUpdate(options);
     }
 
 
-<<<<<<< HEAD
     /**
      * Performs the gauge update using the current options
      * @param options  The options for the guage
@@ -328,12 +267,6 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
 
         // treat the value property special and update it through the
         // value getter.
-=======
-    public basicUpdate(options: T2) {
-
-        // console.log('basic Update', options);
-
->>>>>>> refs/remotes/origin/ng6-upgrade
         if (typeof options.value === 'number') {
 
             // use gauge api directly for most efficient update method
@@ -344,11 +277,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
             delete options.value;
         }
 
-<<<<<<< HEAD
         // do nothing if no option properties to update
-=======
-        // filter empty options and do nothing if no gauge properties to update
->>>>>>> refs/remotes/origin/ng6-upgrade
         if (Object.keys(options).length) {
             this.gauge.update(options);
         }
