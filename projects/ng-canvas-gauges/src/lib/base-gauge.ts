@@ -220,7 +220,8 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
                         if ('attributes' === change.type) {
                             // console.log('DOM, change', change.attributeName);
                             newOptions[attributeName2PropertyName(change.attributeName)] =
-                                this.el.nativeElement.getAttribute(change.attributeName);
+                                CanvasGauges.DomObserver.parse(
+                                    this.el.nativeElement.getAttribute(change.attributeName));
                         }
                     });
 
