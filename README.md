@@ -8,7 +8,7 @@
 ### Getting Started
 1. Install the package in your angular 6 or greater app
 ~~~
-npm install ng-canvas-gauges
+npm install @wparrott/ng-canvas-gauges
 ~~~
 2. Import the GaugesModule to your AppModule file and register it in the imports:
 

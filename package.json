@@ -1,5 +1,5 @@
 {
-  "name": "ng-canvas-gauges",
+  "name": "@wparrott/ng-canvas-gauges",
   "version": "6.0.0",
   "description": "Angular 6+ component wrapper for the canvas-gauges lib written by @Mikhus",
   "scripts": {
