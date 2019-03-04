@@ -39,9 +39,10 @@ export class AppModule {
 <linear-gauge width="150" height="400"></linear-gauge>
 <radial-gauge width="400" height="400"></radial-gauge>
 ~~~
+![Undecorated gauges](gauges1.jpg)
 ------------------------------------------------------
 
-## More specific example of data binding
+## More specific examples of data binding using attributes and component properties
 ~~~javascript
 <linear-gauge
     width="150"
