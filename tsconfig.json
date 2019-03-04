@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ng-canvas-gauges": [
-        "dist/ng-canvas-gauges"
+      "ng-beautiful-gauges": [
+        "dist/ng-beautiful-gauges"
       ],
-      "ng-canvas-gauges/*": [
-        "dist/ng-canvas-gauges/*"
+      "ng-beautiful-gauges/*": [
+        "dist/ng-beautiful-gauges/*"
       ]
     }
   }

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { GaugesModule } from 'ng-canvas-gauges';
+import { GaugesModule } from 'ng-beautiful-gauges';
 
 
 @NgModule({

@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-canvas-gauges": {
-      "root": "projects/ng-canvas-gauges",
-      "sourceRoot": "projects/ng-canvas-gauges/src",
+    "ng-beautiful-gauges": {
+      "root": "projects/ng-beautiful-gauges",
+      "sourceRoot": "projects/ng-beautiful-gauges/src",
       "projectType": "library",
       "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng-canvas-gauges/tsconfig.lib.json",
-            "project": "projects/ng-canvas-gauges/ng-package.json"
+            "tsConfig": "projects/ng-beautiful-gauges/tsconfig.lib.json",
+            "project": "projects/ng-beautiful-gauges/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-canvas-gauges/src/test.ts",
-            "tsConfig": "projects/ng-canvas-gauges/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-canvas-gauges/karma.conf.js"
+            "main": "projects/ng-beautiful-gauges/src/test.ts",
+            "tsConfig": "projects/ng-beautiful-gauges/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-beautiful-gauges/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng-canvas-gauges/tsconfig.lib.json",
-              "projects/ng-canvas-gauges/tsconfig.spec.json"
+              "projects/ng-beautiful-gauges/tsconfig.lib.json",
+              "projects/ng-beautiful-gauges/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -138,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "ng-canvas-gauges"
+  "defaultProject": "ng-beautiful-gauges"
 }

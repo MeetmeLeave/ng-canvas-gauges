@@ -1,8 +1,8 @@
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { interval, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { RadialGauge } from 'ng-canvas-gauges';
-import { LinearGauge, LinearGaugeOptions } from 'ng-canvas-gauges';
+import { RadialGauge, RadialGaugeOptions } from 'ng-beautiful-gauges';
+import { LinearGauge, LinearGaugeOptions } from 'ng-beautiful-gauges';
 
 @Component({
   selector: 'app-root',
@@ -60,14 +60,14 @@ export class AppComponent implements AfterViewInit {
 
 
     // animate rgauge3
-    interval(1000).pipe(
+    interval(3000).pipe(
       map( () => Math.floor( Math.random() * 100 ))
     ).subscribe( x => {
       this.rgauge3.value = x;
     });
 
     // animate lgauge1
-    interval(1000).pipe(
+    interval(1750).pipe(
       map( () => Math.floor( Math.random() * 100 ))
     ).subscribe( x => {
       this.lgauge1.update( {value: x} as LinearGaugeOptions );

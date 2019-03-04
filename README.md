@@ -1,14 +1,14 @@
 ### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
 
-*Note: This repo with issue tracking is made available until a pull request I've submitted to the 
-[ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) repo is accepted. 
-(sumbitted 20190228)*
+*Note: The ng-beautiful-gagues is an updated version of the [ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) 
+project to work with Angular 6 and greater versions. This package will remain active 
+until a pull request I've submitted to that project is accepted (sumbitted 20190228)*
 
 
 ### Getting Started
 1. Install the package in your angular 6 or greater app
 ~~~
-npm install @wparrott/ng-canvas-gauges
+npm install ng-beautiful-gauges
 ~~~
 2. Import the GaugesModule to your AppModule file and register it in the imports:
 
@@ -17,7 +17,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 
-import {GaugesModule} from 'ng-canvas-gauges';
+import {GaugesModule} from 'ng-beautiful-gauges';
 
 @NgModule({
     declarations: [
@@ -91,7 +91,7 @@ programmatically (camelCase format). Learn more: [https://canvas-gauges.com/docu
 
 ------------------------------------------------------
 ## Build
-The repo layout is based on the Angular 6 or greater workspace consisting of the ng-canvas-gauge library project
+The repo layout is based on the Angular 6 or greater workspace consisting of the ng-beautiful-gauge library project
 and a demo angular app project. 
 
 1. Install dependencies
@@ -100,7 +100,7 @@ npm install
 ~~~
 
 2. Create an installable library (.tgz) for upload to the npm public repository or for local installation. 
-    Output is to ./dist/ng-canvas-gauges/ folder.
+    Output is to ./dist/ng-beautiful-gauges/ folder.
 ~~~
 npm run build:package
 ~~~

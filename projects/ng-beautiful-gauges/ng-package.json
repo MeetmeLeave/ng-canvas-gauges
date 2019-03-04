@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ng-canvas-gauges",
+  "dest": "../../dist/ng-beautiful-gauges",
   "lib": {
     "entryFile": "src/public_api.ts"
   },
