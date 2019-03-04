@@ -1,7 +1,12 @@
-### Angular 6+ component wrapper for the canvas-gauges library by @Mikhus(https://github.com/Mikhus/canvas-gauges).
+### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
+
+*Note: This repo is made available until a pull request I've submitted to the 
+[ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) repo is accepted. 
+(sumbitted 20190228)*
+
 
 ### Getting Started
-1. Install the package in your angular 7 or greater app
+1. Install the package in your angular 6 or greater app
 ~~~
 npm install ng-canvas-gauges
 ~~~
@@ -73,15 +78,20 @@ export class AppModule {
     bar-stroke="0"
     bar-width="8"
     bar-begin-circle="false"
-    [attr.value]="value"
+    [attr.value]="myValueProperty"
   ></linear-gauge>
+
+  <radial-gauge 
+    [options]="myOptionsProperty"
+    [value]="myValueProperty"
+  ><radial-gauge>
 ~~~
-All canvas-gauge attributes are supported. Learn more:
-[https://canvas-gauges.com/documentation/user-guide/configuration](https://canvas-gauges.com/documentation/user-guide/configuration)
+All canvas-gauge attributes are supported as shown above (kebab format) or 
+programmatically (camelCase format). Learn more: [https://canvas-gauges.com/documentation/user-guide/configuration](https://canvas-gauges.com/documentation/user-guide/configuration)
 
 ------------------------------------------------------
 ## Build
-This repo layout is based on an Angular 6 or greater workspace containing the ng-canvas-gauge library project
+The repo layout is based on the Angular 6 or greater workspace consisting of the ng-canvas-gauge library project
 and a demo angular app project. 
 
 1. Install dependencies
