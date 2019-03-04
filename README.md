@@ -1,6 +1,6 @@
 ### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
 
-*Note: This repo is made available until a pull request I've submitted to the 
+*Note: This repo with issue tracking is made available until a pull request I've submitted to the 
 [ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) repo is accepted. 
 (sumbitted 20190228)*
 

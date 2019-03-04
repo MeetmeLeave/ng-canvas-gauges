@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
+    "url": "https://github.com/wayneparrott/ng-canvas-gauges.git"
   },
   "keywords": [
     "Angular",
@@ -34,9 +34,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
+    "url": "https://github.com/wayneparrott/ng-canvas-gauges/issues"
   },
-  "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
+  "homepage": "https://github.com/wayneparrott/ng-canvas-gauges",
   "dependencies": {
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
