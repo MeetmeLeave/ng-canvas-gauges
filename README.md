@@ -1,8 +1,9 @@
 ### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
 
-*Note: The ng-beautiful-gagues is an updated version of the [ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) 
+*Note: The ng-beautiful-gauges is an updated version of the [ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) 
 project to work with Angular 6 and greater versions. This package will remain active 
-until a pull request I've submitted to that project is accepted (sumbitted 20190228)*
+until the project is updated to work with Angular 6+ projects. A (pull request)[https://github.com/MeetmeLeave/ng-canvas-gauges/pull/19] 
+based on this project was submitted to ng-canvas-gauges on 20190228).*
 
 
 ### Getting Started
