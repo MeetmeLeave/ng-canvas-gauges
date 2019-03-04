@@ -112,3 +112,7 @@ npm run build:package
 [![Lohika](http://www.lohika.com/wp-content/themes/gridalicious/images/lohika_full.svg)](http://www.lohika.com/)
 
 For supporting development!
+
+The upgrade of this project to ng-beautiful-gauges was developed using 
+[CodeMix](https://www.genuitec.com/products/codemix/).
+
