@@ -1,0 +1,62 @@
+
+<!-- 
+     A tachometer gauge for indicating RPM.
+     Demonstrates updating the gauge's value property 
+     directly by the component.
+-->
+<radial-gauge #tachometer
+    highlights-width="5"
+    numbers-margin="5"
+    font-numbers-size="30"
+
+    width="300"
+    height="300"
+    units="RPM"
+    min-value="0"
+    max-value="12000"
+    major-ticks="[0,1,2,3,4,5,6,7,8,9,10,11,12]"
+    minor-ticks="0"
+    stroke-ticks="true"
+    highlights='[
+       {"from": 9250, "to": 11995, "color": "rgba(200, 50, 50, .75)"}
+    ]'
+    highlights-width="13"
+    ticks-angle="270"
+    start-angle="0"
+
+    value-box="false"
+    
+    border-inner-width="10"
+    border-middle-width="1"
+    border-outer-width="5"
+
+    color-major-ticks="#888"
+    color-minor-ticks="#ddd"
+    color-title="#eee"
+    color-units="#ccc"
+    color-numbers="#bb1"
+    color-plate="#000"
+    color-plate-end="#222"
+    border-shadow-width="0"
+    borders="true"
+    needle-type="arrow"
+    needle-width="2"
+    needle-circle-size="7"
+    needle-circle-outer="true"
+    needle-circle-inner="false"
+    animation-duration="1500"
+    animation-rule="linear"
+    
+    color-border-outer="#111"
+    color-border-middle="#888"
+    color-border-middle-end="#555"
+    color-border-inner="#111"
+
+    color-needle-shadow-down="#550"
+    color-needle-circle-outer="#333"
+    color-needle-circle-outer-end="#111"
+     
+    class="gauge"
+>
+</radial-gauge>
+

@@ -1,0 +1,11 @@
+<!-- 
+  Demonstrates programmatic configuration and update of
+  the #scale_gauge properties. Watch the plate's color change
+  over time.
+-->
+<radial-gauge #scale_gauge
+    [options]="scaleGaugeOptions"
+    [value]="(value$ | async)"
+    class="gauge"
+>
+</radial-gauge>

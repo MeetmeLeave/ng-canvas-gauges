@@ -39,7 +39,7 @@ export class AppModule {
 <linear-gauge width="150" height="400"></linear-gauge>
 <radial-gauge width="400" height="400"></radial-gauge>
 ~~~
-![Undecorated gauges](gauges1.jpg)
+![Example gauges](gauges1.gif)
 ------------------------------------------------------
 
 ## More specific examples of data binding using attributes and component properties
@@ -111,10 +111,8 @@ npm run build:package
 
 ## Special Thanks
 
-[![Lohika](http://www.lohika.com/wp-content/themes/gridalicious/images/lohika_full.svg)](http://www.lohika.com/)
-
-For supporting development!
-
-The upgrade of this project to ng-beautiful-gauges was developed using 
+The upgrade of this project to ng-beautiful-gauges and demos were developed using 
 [CodeMix](https://www.genuitec.com/products/codemix/).
+
+[![Lohika](http://www.lohika.com/wp-content/themes/gridalicious/images/lohika_full.svg)](http://www.lohika.com/)
 

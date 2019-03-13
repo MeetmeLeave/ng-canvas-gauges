@@ -1,5 +1,8 @@
 
-linear-gauge, radial-gauge {
-    margin-left: 20px;
-    margin-right: 40px;
+* {
+    font-family: sans-serif
+}
+
+.gauge {
+    margin: 20px 20px 20px 20px;
 }
