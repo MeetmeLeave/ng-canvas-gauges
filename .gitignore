@@ -2,6 +2,14 @@ npm-debug.log
 node_modules
 jspm_packages
 .idea
-lib
 build
 *.log
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# System Files
+.DS_Store
+Thumbs.db

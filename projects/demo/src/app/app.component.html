@@ -1,0 +1,42 @@
+<h1>
+    {{title}}
+</h1>
+<!-- test1 options and value updated by observable 
+     and parent's options binding -->
+<radial-gauge #rgauge1
+    [options]="rgauge1Options"
+    [attr.value]="(rgauge1Observable$ | async)"
+></radial-gauge>
+
+<!-- test2 attributes and value binding to simple number property -->
+<radial-gauge #rgauge2
+    title="rgauge2"
+    width="200"
+    height="200"
+    color-plate="rgb(255,255,0)"
+    animation-rule="bounce"
+    animation-duration="700"
+    animation-target="plate"
+    [attr.value]="rgauge2Value"
+    >
+</radial-gauge> 
+
+<!-- test3 test value via setter -->
+<radial-gauge #rgauge3
+    title="rgauge3"
+    width="300"
+    height="300"
+    animation-rule="quad"
+    animation-duration="700"
+    animated-value="true" >
+</radial-gauge>
+
+<!-- test4 - test value update via update() api -->
+<linear-gauge #lgauge1
+    title="1gauge1"
+    width="100"
+    height="300"
+    animation-rule="linear"
+    animation-duration="700"
+    >
+</linear-gauge> 
