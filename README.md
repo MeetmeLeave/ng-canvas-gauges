@@ -1,15 +1,9 @@
 ### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
 
-*Note: The ng-beautiful-gauges is an updated version of the [ng-canvas-gauges](https://github.com/MeetmeLeave/ng-canvas-gauges) 
-project to work with Angular 6 and greater versions. This package will remain active 
-until the project is updated to work with Angular 6+ projects. A [pull request](https://github.com/MeetmeLeave/ng-canvas-gauges/pull/19) 
-based on this project was submitted to ng-canvas-gauges on 20190228).*
-
-
 ### Getting Started
 1. Install the package in your angular 6 or greater app
 ~~~
-npm install ng-beautiful-gauges
+npm install ng-canvas-gauges
 ~~~
 2. Import the GaugesModule to your AppModule file and register it in the imports:
 
@@ -18,7 +12,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 
-import {GaugesModule} from 'ng-beautiful-gauges';
+import {GaugesModule} from 'ng-canvas-gauges';
 
 @NgModule({
     declarations: [
@@ -39,7 +33,7 @@ export class AppModule {
 <linear-gauge width="150" height="400"></linear-gauge>
 <radial-gauge width="400" height="400"></radial-gauge>
 ~~~
-![Example gauges](gauges1.gif)
+![Example gauges](gauges.gif)
 ------------------------------------------------------
 
 ## More specific examples of data binding using attributes and component properties
@@ -93,7 +87,7 @@ programmatically (camelCase format). Learn more: [https://canvas-gauges.com/docu
 
 ------------------------------------------------------
 ## Build
-The repo layout is based on the Angular 6 or greater workspace consisting of the ng-beautiful-gauge library project
+This repo layout is based on an Angular 6 or greater workspace consists of the ng-canvas-gauge library project
 and a demo angular app project. 
 
 1. Install dependencies
@@ -102,7 +96,7 @@ npm install
 ~~~
 
 2. Create an installable library (.tgz) for upload to the npm public repository or for local installation. 
-    Output is to ./dist/ng-beautiful-gauges/ folder.
+    Output is to ./dist/ng-canvas-gauges/ folder.
 ~~~
 npm run build:package
 ~~~
@@ -111,8 +105,9 @@ npm run build:package
 
 ## Special Thanks
 
-The upgrade of this project to ng-beautiful-gauges and demos were developed using 
+The upgrade of this library to angular 6+ and the demos project were developed using 
 [CodeMix](https://www.genuitec.com/products/codemix/).
 
 [![Lohika](http://www.lohika.com/wp-content/themes/gridalicious/images/lohika_full.svg)](http://www.lohika.com/)
 
+For supporting development!

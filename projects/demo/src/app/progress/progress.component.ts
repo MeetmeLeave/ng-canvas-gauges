@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { interval, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { ViewRef } from '@angular/core/src/render3/view_ref';
-import { RadialGauge, RadialGaugeOptions } from 'ng-beautiful-gauges';
+import { RadialGauge, RadialGaugeOptions } from 'ng-canvas-gauges';
 
 /**
  * Progress indicator based on customize radial gauge.

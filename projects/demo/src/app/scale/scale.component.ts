@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { Observable, interval, timer } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { RadialGauge } from 'ng-beautiful-gauges';
+import { RadialGauge } from 'ng-canvas-gauges';
 
 /**
  * A simple scale gauge for measuring 0-10 lbs.

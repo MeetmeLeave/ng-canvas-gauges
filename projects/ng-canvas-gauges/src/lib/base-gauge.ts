@@ -22,9 +22,21 @@
  * SOFTWARE.
  */
 
-import { Component, ViewChild, Input, NgZone, ElementRef, OnInit, AfterViewInit } from '@angular/core';
+import { ViewChild, Input, NgZone, ElementRef, OnInit, AfterViewInit } from '@angular/core';
 import * as CanvasGauges from 'canvas-gauges';
 import * as Rx from 'rx-dom-html';
+
+
+
+// String utils
+const toCamelCase = (str: string) => str.replace(/(\-\w)/g, (matches) => matches[1].toUpperCase());
+
+const toKebabCase = (str: string) => str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+
+const attributeName2PropertyName = (attrName: string) => toCamelCase(attrName);
+
+
+
 
 /**
  * Base gauge component for the Gauges rendering
@@ -118,7 +130,7 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
         return options;
     }
 
-    
+
     /**
      * Assign gauge options at anytime in the lifecycle.
      * @param newOptions - assign the style and size properties
@@ -286,13 +298,5 @@ export abstract class BaseGauge<T extends CanvasGauges.BaseGauge, T2 extends Can
 
 }
 
-// String utils
-const attributeName2PropertyName = (attrName: string) => toCamelCase(attrName);
-
-const propertyName2AttrName = (propName: string) => toKebabCase(propName);
-
-const toCamelCase = (str) => str.replace(/(\-\w)/g, (m) => m[1].toUpperCase());
-
-const toKebabCase = (str) => str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
 
 

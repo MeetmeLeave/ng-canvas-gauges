@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { VechicleSimService } from '../vechiclesim.service';
-import { RadialGauge } from 'ng-beautiful-gauges';
+import { RadialGauge } from 'ng-canvas-gauges';
 
 /**
  * Tachometer gauge

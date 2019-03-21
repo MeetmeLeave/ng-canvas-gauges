@@ -1,10 +1,10 @@
 {
-  "name": "ng-beautiful-gauges",
-  "version": "6.0.4",
+  "name": "ng-canvas-gauges",
+  "version": "6.0.1",
   "description": "Angular 6+ component wrapper for the canvas-gauges lib written by @Mikhus",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wayneparrott/ng-beautiful-gauges.git"
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
   },
   "keywords": [
     "Angular",
@@ -20,9 +20,9 @@
     }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wayneparrott/ng-beautiful-gauges/issues"
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
   },
-  "homepage": "https://github.com/wayneparrott/ng-beautiful-gauges",
+  "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
   "peerDependencies": {
     "@angular/common": ">=6.0.0",
     "@angular/core": ">=6.0.0"
