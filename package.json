@@ -1,21 +1,21 @@
 {
-  "name": "ng-beautiful-gauges",
-  "version": "6.0.4",
+  "name": "ng-canvas-gauges",
+  "version": "6.0.1",
   "description": "Angular 6+ component wrapper for the canvas-gauges lib written by @Mikhus",
   "scripts": {
     "build:example": "ng build example",
-    "build:lib": "ng build ng-beautiful-gauges",
+    "build:lib": "ng build ng-canvas-gauges",
     "prebuild:lib": "npm run clean",
-    "postbuild:lib": "cp -f ./LICENSE  ./README.md ./gauges1.jpg ./dist/ng-beautiful-gauges",
-    "build:pack": "cd dist/ng-beautiful-gauges && npm pack",
+    "postbuild:lib": "cp -f ./LICENSE  ./README.md ./gauges.png ./gauges.gif ./dist/ng-canvas-gauges",
+    "build:pack": "cd dist/ng-canvas-gauges && npm pack",
     "build:package": "npm run build:lib && npm run build:pack",
-    "postbuild:package": "mkdir -p lib && cp dist/ng-beautiful-gauges/ng-beautiful-gauges-*.tgz lib",
+    "postbuild:package": "mkdir -p lib && cp dist/ng-canvas-gauges/ng-canvas-gauges-*.tgz lib",
     "clean": "rm -rf dist/ lib/",
     "start": "ng serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wayneparrott/ng-beautiful-gauges.git"
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges.git"
   },
   "keywords": [
     "Angular",
@@ -34,9 +34,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wayneparrott/ng-beautiful-gauges/issues"
+    "url": "https://github.com/MeetmeLeave/ng-canvas-gauges/issues"
   },
-  "homepage": "https://github.com/wayneparrott/ng-beautiful-gauges",
+  "homepage": "https://github.com/MeetmeLeave/ng-canvas-gauges",
   "dependencies": {
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
