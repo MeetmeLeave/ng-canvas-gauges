@@ -10,8 +10,7 @@ import { RadialGauge } from 'ng-canvas-gauges';
  */
 @Component({
   selector: 'app-scale',
-  templateUrl: './scale.component.html',
-  styleUrls: ['./scale.component.css']
+  templateUrl: './scale.component.html'
 })
 export class ScaleComponent implements OnInit, AfterViewInit {
 
