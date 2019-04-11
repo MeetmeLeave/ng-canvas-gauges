@@ -1,0 +1,40 @@
+
+<!-- 
+     A speedometer gauge.
+     Demonstrates binding the gauge's value property 
+     to the components value$ observable property. 
+     Code was inspirted by canvas-gauges examples.
+-->
+<radial-gauge
+
+    [value]="(value$ | async)"
+
+    width="300"
+    height="300"
+    units="MPH"
+    min-value="0"
+    start-angle="60"
+    ticks-angle="240"
+    value-box="false"
+    max-value="220"
+    major-ticks="0,20,40,60,80,100,120,140,160,180,200,220"
+    minor-ticks="2"
+    stroke-ticks="true"
+   highlights='[
+        {"from": 160, "to": 220, "color": "rgba(200, 50, 50, .75)"}
+    ]'
+    color-plate="#fff"
+    border-shadow-width="0"
+    borders="false"
+    needle-type="arrow"
+    needle-width="2"
+    needle-circle-size="7"
+    needle-circle-outer="true"
+    needle-circle-inner="false"
+    animation-duration="1500"
+    animation-rule="linear"
+    animate-on-init="true"
+    
+    class="gauge"
+>
+</radial-gauge>

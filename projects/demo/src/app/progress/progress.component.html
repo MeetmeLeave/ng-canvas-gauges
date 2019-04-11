@@ -1,0 +1,68 @@
+<!-- 
+    Demonstrates using a radial gauge as a progress indicator. 
+    The gauge value is bound to the component's value$ observable property.
+-->
+<radial-gauge #progress_gauge
+
+    [value]="(value$ | async)"
+ 
+    width="150"
+    height="150"
+    units="Loading"
+    min-value="0"
+    max-value="100"
+    
+    color-plate="transparent"
+
+    ticks-angle="315"
+    start-angle="25"
+    stroke-ticks="false"
+    major-ticks="[,]"
+    minor-ticks="0"
+    highlights='[]'
+    highlights-width="25"
+
+    border-shadow-width="0"
+    border-inner-width="1"
+    border-middle-width="0"
+    border-outer-width="0"
+    borders="true"
+    color-border-shadow="false"
+    color-border-inner="#eee"
+    color-border-inner-end="#eee"
+
+
+    bar-progress="true"
+    bar-width="30"
+    bar-shadow="#f00"
+    bar-stroke-width="0"
+    
+    color-bar="transparent"
+    color-major-ticks="transparent"
+
+    value-box="true"
+    color-value-box="transparent"
+    color-value-text="rgba(0,200,200,.75)"
+    color-value-text-shadow="false"
+    color-value-box-rect="transparent"
+    color-value-box-background="transparent"
+
+    font-units-size="50"
+    font-value-size="75"
+    value-text-shadow="false"
+    value-int="2"
+    value-dec="0"
+    value-box-stroke="0"
+
+    needle="false"
+    animation-rule="linear"
+    animation-duration="200"
+
+
+    class="gauge"
+
+>
+</radial-gauge>
+
+
+

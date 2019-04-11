@@ -1,0 +1,60 @@
+<!-- 
+    A fuel gauge.
+    Demonstrates updating the gauge's value property using
+    element "value" attributes. Recommend directly updating
+    the gauge's value property rather than using the circuitous route 
+    of updating the value attribute shown here.
+-->
+<radial-gauge 
+
+    [attr.value]="(value$ | async)"
+
+    units="Fuel"
+    width="150"
+    height="150"
+    min-value="0"
+    max-value="100"
+    start-angle="120"
+    ticks-angle="120"
+    major-ticks="E,,F"
+    minor-ticks="2"
+    stroke-ticks="false"
+
+    highlights='[
+        {"from": 0, "to": 15, "color": "rgba(200, 10, 10, .5)"},
+        {"from": 15, "to": 35, "color": "rgba(200, 200, 50, .5)"},
+        {"from": 80, "to": 100, "color": "rgba(50, 200, 50, .3)"}
+    ]'
+    highlights-width="25"
+    numbers-margin="5"
+
+    color-plate="rgb(255,255,255)"
+
+    value-box="false"
+    
+    border-shadow-width="0"
+    borders="false"
+    needle-type="arrow"
+    needle-width="2"
+    needle-circle-size="7"
+    needle-circle-outer="true"
+    needle-circle-inner="false"
+
+    borders="true"
+    border-inner-width="0"
+    border-middle-width="0"
+    border-outer-width="5"
+    color-border-outer="#000"
+    color-border-outer-end="#555"
+    color-needle-shadow-down="#222"
+    border-shadow-width="0"
+
+    font-numbers-size="50"
+    font-units-size="50"
+
+    animation-rule="linear"
+    animation-duration="1000"
+
+    class="gauge"
+>
+</radial-gauge>

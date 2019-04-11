@@ -1,7 +1,7 @@
-### Angular 6+ component wrapper for the canvas-gauges library by @Mikhus(https://github.com/Mikhus/canvas-gauges).
+### Angular 6+ component wrapper for [@Mikhus'](https://github.com/Mikhus/canvas-gauges) canvas-gauges library.
 
 ### Getting Started
-1. Install the package in your angular 7 or greater app
+1. Install the package in your angular 6 or greater app
 ~~~
 npm install ng-canvas-gauges
 ~~~
@@ -33,9 +33,10 @@ export class AppModule {
 <linear-gauge width="150" height="400"></linear-gauge>
 <radial-gauge width="400" height="400"></radial-gauge>
 ~~~
+![Example gauges](gauges.gif)
 ------------------------------------------------------
 
-## More specific example of data binding
+## More specific examples of data binding using attributes and component properties
 ~~~javascript
 <linear-gauge
     width="150"
@@ -73,15 +74,20 @@ export class AppModule {
     bar-stroke="0"
     bar-width="8"
     bar-begin-circle="false"
-    [attr.value]="value"
+    [attr.value]="myValueProperty"
   ></linear-gauge>
+
+  <radial-gauge 
+    [options]="myOptionsProperty"
+    [value]="myValueProperty"
+  ><radial-gauge>
 ~~~
-All canvas-gauge attributes are supported. Learn more:
-[https://canvas-gauges.com/documentation/user-guide/configuration](https://canvas-gauges.com/documentation/user-guide/configuration)
+All canvas-gauge attributes are supported as shown above (kebab format) or 
+programmatically (camelCase format). Learn more: [https://canvas-gauges.com/documentation/user-guide/configuration](https://canvas-gauges.com/documentation/user-guide/configuration)
 
 ------------------------------------------------------
 ## Build
-This repo layout is based on an Angular 6 or greater workspace containing the ng-canvas-gauge library project
+This repo layout is based on an Angular 6 or greater workspace consists of the ng-canvas-gauge library project
 and a demo angular app project. 
 
 1. Install dependencies
@@ -98,6 +104,9 @@ npm run build:package
 ------------------------------------------------------
 
 ## Special Thanks
+
+The upgrade of this library to angular 6+ and the demos project were developed using 
+[CodeMix](https://www.genuitec.com/products/codemix/).
 
 [![Lohika](http://www.lohika.com/wp-content/themes/gridalicious/images/lohika_full.svg)](http://www.lohika.com/)
 
