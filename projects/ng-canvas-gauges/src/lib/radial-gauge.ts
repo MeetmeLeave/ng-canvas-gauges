@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-import { Component, NgZone, ElementRef, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, NgZone, OnInit } from '@angular/core';
 import { BaseGauge } from './base-gauge';
 import * as CanvasGauges from 'canvas-gauges';
 
@@ -37,12 +37,14 @@ export { RadialGaugeOptions } from 'canvas-gauges';
     template: '<canvas #gauge></canvas>'
 })
 // tslint:disable-next-line:component-class-suffix
-export class RadialGauge extends BaseGauge<CanvasGauges.RadialGauge, CanvasGauges.RadialGaugeOptions> implements OnInit {
+export class RadialGauge extends BaseGauge<CanvasGauges.RadialGauge, CanvasGauges.RadialGaugeOptions> implements OnInit, AfterViewInit {
     constructor(el: ElementRef, zone: NgZone) {
         super(el, zone);
     }
 
-    ngOnInit() {
+    ngOnInit() {}
+
+    ngAfterViewInit() {
         this.gauge = new CanvasGauges.RadialGauge(this.options).draw();
     }
 }
